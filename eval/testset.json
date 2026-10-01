@@ -116,14 +116,14 @@
     "type": "answerable",
     "question": "How can someone file a complaint against a company misusing their data?",
     "expected_sections": [46],
-    "expected_answer": ""
+    "expected_answer": "Under s.46(1), a data subject aggrieved by a controller's or processor's decision, action or inaction in violation of the Act may lodge a complaint with the Commission. Under s.46(2), the Commission may investigate if the complaint is not frivolous or vexatious, and under s.46(3), it can also investigate on its own initiative."
   },
   {
     "id": "A18",
     "type": "answerable",
     "question": "What is the maximum penalty a company can face for violating the Act?",
     "expected_sections": [48, 49],
-    "expected_answer": ""
+    "expected_answer": "Under s.48(3)-(5), the Commission may impose a penalty or remedial fee up to the 'higher maximum amount' for controllers or processors of major importance (the greater of N10,000,000 or 2% of the previous year's annual gross revenue) or the 'standard maximum amount' for others (the greater of N2,000,000 or 2%). Under s.49(1), failing to comply with a s.47 compliance order is an offence punishable on conviction by a fine up to those same amounts, imprisonment of up to one year, or both."
   },
   {
     "id": "A19",
@@ -137,7 +137,7 @@
     "type": "answerable",
     "question": "If another Nigerian law conflicts with the NDPA on data protection, which one wins?",
     "expected_sections": [63],
-    "expected_answer": ""
+    "expected_answer": "The NDPA. Under s.63, where any other law relating to the processing of personal data is inconsistent with the Act, the Act's provisions prevail."
   },
 
   {
