@@ -18,3 +18,9 @@
 - Text layer contains stray characters (e.g. "section ż42" in s.43), so text needs cleaning before cross-reference extraction.
 - Key definitions live in s.65 (Interpretation), and several test questions depend on it alongside another section. It's a likely retrieval hotspot.
 - "child" (s.65) is defined only by reference to the Child's Right Act 2003, so the corpus cannot answer age thresholds alone. This is a known limitation of a single-document corpus.
+
+## 4. Segmentation script
+- Margin notes removed by matching runs of lines against Arrangement titles (normalised, so spaced-out "S e c u r i t y," is caught). Runs must start with a capital so body words like "consent." aren't mistaken for the "Consent" title.
+- Gazette quirks needing explicit rules: s.19's margin note reads "Fund of the Commission" while the Arrangement says "Funds", so it was added as a known variant rather than loosening matching; margin cross-reference "Schedule" (s.8) and statute citation "Cap. P41, LFN, 2004" (s.54) added to noise rules.
+- First diagnostic run flagged 24 "suspect" lines; 20 were false positives from legal text wrapping on "; and"/"; or". Fixed the diagnostic, not the cleaner.
+- Result: 66/66 sections, titles and Parts from the Arrangement, cross-references verified on s.27, s.43, s.49. Schedule excluded from v1 (procedural, no test questions touch it).
