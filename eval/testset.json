@@ -67,28 +67,28 @@
     "type": "answerable",
     "question": "Can a 15-year-old consent to my app processing their data?",
     "expected_sections": [31, 65],
-    "expected_answer": ""
+    "expected_answer": "Generally no. Under s.31(1), where the data subject is a child, the controller must obtain the consent of a parent or legal guardian and, under s.31(2), verify age and consent. However, s.31(5) leaves the processing of data of children aged 13 and above, for electronic services they request themselves, to regulations by the Commission. [ADD s.65 definition of child]"
   },
   {
     "id": "A11",
     "type": "answerable",
     "question": "Does my company need to appoint a Data Protection Officer?",
-    "expected_sections": [32],
-    "expected_answer": ""
+    "expected_sections": [32, 65],
+    "expected_answer": "Only if it is a data controller of major importance: under s.32(1), such controllers must designate a Data Protection Officer with expert knowledge of data protection law. Under s.32(2), the DPO may be an employee or engaged by service contract."
   },
   {
     "id": "A12",
     "type": "answerable",
     "question": "Can a user challenge a decision about them made entirely by an algorithm?",
     "expected_sections": [37],
-    "expected_answer": ""
+    "expected_answer": "Yes. Under s.37(1), a data subject has the right not to be subject to decisions based solely on automated processing, including profiling, that have legal or similarly significant effects. Exceptions under s.37(2) are contract necessity, authorisation by written law, or consent; even then, s.37(3) requires safeguards including human intervention, the right to express a view, and the right to contest the decision."
   },
   {
     "id": "A13",
     "type": "answerable",
     "question": "Can a user ask for their data in a format they can move to another service?",
     "expected_sections": [38],
-    "expected_answer": ""
+    "expected_answer": "Yes. Under s.38(2), the data subject may receive their data in a structured, commonly used, machine-readable format, transmit it to another controller, and, where technically possible, have it sent directly. Under s.38(1) and (3), the Commission may make regulations setting the conditions for exercising this right."
   },
   {
     "id": "A14",
@@ -130,7 +130,7 @@
     "type": "answerable",
     "question": "If a user withdraws consent, does that make my earlier processing of their data illegal?",
     "expected_sections": [26, 35],
-    "expected_answer": ""
+    "expected_answer": "No. Under s.26(5), withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal. Under s.35, the data subject can withdraw at any time, and it must be as easy to withdraw consent as to give it."
   },
   {
     "id": "A20",
