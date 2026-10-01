@@ -95,21 +95,21 @@
     "type": "answerable",
     "question": "If our database gets hacked, how quickly must we notify the regulator, and do we have to tell affected users?",
     "expected_sections": [40],
-    "expected_answer": ""
+    "expected_answer": "Under s.40(2), the data controller must notify the Commission within 72 hours of becoming aware of a breach likely to risk individuals' rights and freedoms. Under s.40(3), if the breach is likely to cause high risk, affected data subjects must be told immediately in plain language, with advice on mitigating the effects, or through a public communication if direct notice isn't feasible."
   },
   {
     "id": "A15",
     "type": "answerable",
     "question": "Can I store Nigerian customers' data on servers in the United States?",
     "expected_sections": [41, 42, 43],
-    "expected_answer": ""
+    "expected_answer": "Only under conditions. Under s.41(1), transfer outside Nigeria is allowed only if the recipient is subject to a law, binding corporate rules, contractual clauses, code of conduct or certification giving adequate protection (assessed under s.42 as principles substantially similar to the NDPA's), or if a s.43 condition applies, such as informed consent to the risks, contract necessity, or legal claims. Under s.41(2), the transfer basis and adequacy assessment must be recorded."
   },
   {
     "id": "A16",
     "type": "answerable",
     "question": "Which companies have to register with the Commission?",
     "expected_sections": [44, 65],
-    "expected_answer": ""
+    "expected_answer": "Under s.44(1), data controllers and processors of major importance must register with the Commission within six months of the Act's commencement or of becoming one. Under s.65, these are entities processing data of more than a number of data subjects the Commission prescribes, or those designated as processing data of particular significance to Nigeria's economy, society or security."
   },
   {
     "id": "A17",
