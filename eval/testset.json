@@ -194,7 +194,7 @@
     "subtype": "near_miss",
     "question": "Exactly how much is the registration fee for a data controller of major importance?",
     "expected_sections": [],
-    "expected_answer": ""
+    "expected_answer": "Not specified. Under s.45, the Commission may prescribe fees or levies, but the Act sets no amounts."
   },
   {
     "id": "U08",
@@ -202,7 +202,7 @@
     "subtype": "near_miss",
     "question": "How many days do I have to respond to a user's request to access their data?",
     "expected_sections": [],
-    "expected_answer": ""
+    "expected_answer": "Not specified. Under s.34(1), access must be provided without constraint or unreasonable delay, but the Act sets no number of days."
   },
 
   {
@@ -211,7 +211,7 @@
     "subtype": "near_miss",
     "question": "How many users does a company need to have to qualify as a data controller of major importance?",
     "expected_sections": [],
-    "expected_answer": ""
+    "expected_answer": "Not specified. Under s.65, the threshold is a number of data subjects that the Commission prescribes; the Act sets no figure."
   },
   {
     "id": "U10",
@@ -219,6 +219,6 @@
     "subtype": "near_miss",
     "question": "What encryption standard does the NDPA require for stored passwords?",
     "expected_sections": [],
-    "expected_answer": ""
+    "expected_answer": "Not specified. Under s.39(2)(b), encryption is listed as a measure controllers may implement, but the Act prescribes no encryption standard and does not address passwords."
   }
 ]
