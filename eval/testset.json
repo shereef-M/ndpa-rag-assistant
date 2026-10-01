@@ -1,0 +1,223 @@
+[
+  {
+    "id": "A01",
+    "type": "answerable",
+    "question": "Does the NDPA apply to a foreign company that processes data of people in Nigeria?",
+    "expected_sections": [2],
+    "expected_answer": "Yes. Under s.2(2)(c), the Act applies even where the controller or processor is not domiciled, resident or operating in Nigeria, if it processes personal data of a data subject in Nigeria."
+  },
+  {
+    "id": "A02",
+    "type": "answerable",
+    "question": "What is the Nigeria Data Protection Commission actually responsible for?",
+    "expected_sections": [5],
+    "expected_answer": "Under s.5, the Commission regulates personal data protection measures, registers data controllers and processors of major importance, accredits data protection compliance service providers, receives complaints about violations, determines the adequacy of protection for cross-border transfers, promotes public awareness, and advises government on data protection policy."
+  },
+  {
+    "id": "A03",
+    "type": "answerable",
+    "question": "Who appoints the National Commissioner, and how long is the term?",
+    "expected_sections": [14],
+    "expected_answer": "Under s.14(1)(a), the President appoints the National Commissioner on the Minister's recommendation. Under s.14(4)(a), the term is five years, renewable once for another five years and no more."
+  },
+  {
+    "id": "A04",
+    "type": "answerable",
+    "question": "What basic principles must I follow when handling people's personal data?",
+    "expected_sections": [24],
+    "expected_answer": "Under s.24(1), personal data must be processed fairly, lawfully and transparently; collected for specified, legitimate purposes; limited to what is necessary; kept no longer than necessary; accurate and up to date; and kept secure. Under s.24(3), controllers and processors also owe a duty of care and must demonstrate accountability."
+  },
+  {
+    "id": "A05",
+    "type": "answerable",
+    "question": "Apart from consent, what legal grounds can I rely on to process someone's data?",
+    "expected_sections": [25],
+    "expected_answer": "Under s.25(1)(b), processing without consent is lawful where it is necessary for a contract with the data subject, a legal obligation, protecting someone's vital interests, a public-interest task or official authority, or legitimate interests. Under s.25(2), legitimate interests don't apply if they override the data subject's rights or the data subject wouldn't reasonably expect the processing."
+  },
+  {
+    "id": "A06",
+    "type": "answerable",
+    "question": "If a user doesn't respond to my consent request, can I treat that as a yes?",
+    "expected_sections": [26],
+    "expected_answer": "No. Under s.26(3), silence or inactivity does not constitute consent. Under s.26(7)(a), consent must be affirmative and cannot rely on a pre-selected confirmation."
+  },
+  {
+    "id": "A07",
+    "type": "answerable",
+    "question": "What do I have to tell users before collecting their data?",
+    "expected_sections": [27],
+    "expected_answer": "Under s.27(1), before collecting data directly, the controller must tell the data subject its identity and contact details, the lawful basis and purposes of processing, any recipients, the data subject's rights, the retention period, the right to complain to the Commission, and any automated decision-making or profiling. Under s.27(3), this must be in a clear, accessible privacy policy."
+  },
+  {
+    "id": "A08",
+    "type": "answerable",
+    "question": "When am I required to carry out a data privacy impact assessment?",
+    "expected_sections": [28],
+    "expected_answer": "Under s.28(1), a data privacy impact assessment is required before processing that is likely to result in high risk to data subjects' rights and freedoms, given its nature, scope, context and purposes. Under s.28(2), if the assessment still shows high risk, the controller must consult the Commission before processing."
+  },
+  {
+    "id": "A09",
+    "type": "answerable",
+    "question": "What counts as sensitive personal data, and when am I allowed to process it?",
+    "expected_sections": [30],
+    "expected_answer": ""
+  },
+  {
+    "id": "A10",
+    "type": "answerable",
+    "question": "Can a 15-year-old consent to my app processing their data?",
+    "expected_sections": [31, 65],
+    "expected_answer": ""
+  },
+  {
+    "id": "A11",
+    "type": "answerable",
+    "question": "Does my company need to appoint a Data Protection Officer?",
+    "expected_sections": [32],
+    "expected_answer": ""
+  },
+  {
+    "id": "A12",
+    "type": "answerable",
+    "question": "Can a user challenge a decision about them made entirely by an algorithm?",
+    "expected_sections": [37],
+    "expected_answer": ""
+  },
+  {
+    "id": "A13",
+    "type": "answerable",
+    "question": "Can a user ask for their data in a format they can move to another service?",
+    "expected_sections": [38],
+    "expected_answer": ""
+  },
+  {
+    "id": "A14",
+    "type": "answerable",
+    "question": "If our database gets hacked, how quickly must we notify the regulator, and do we have to tell affected users?",
+    "expected_sections": [40],
+    "expected_answer": ""
+  },
+  {
+    "id": "A15",
+    "type": "answerable",
+    "question": "Can I store Nigerian customers' data on servers in the United States?",
+    "expected_sections": [41, 42, 43],
+    "expected_answer": ""
+  },
+  {
+    "id": "A16",
+    "type": "answerable",
+    "question": "Which companies have to register with the Commission?",
+    "expected_sections": [44, 65],
+    "expected_answer": ""
+  },
+  {
+    "id": "A17",
+    "type": "answerable",
+    "question": "How can someone file a complaint against a company misusing their data?",
+    "expected_sections": [46],
+    "expected_answer": ""
+  },
+  {
+    "id": "A18",
+    "type": "answerable",
+    "question": "What is the maximum penalty a company can face for violating the Act?",
+    "expected_sections": [48, 49],
+    "expected_answer": ""
+  },
+  {
+    "id": "A19",
+    "type": "answerable",
+    "question": "If a user withdraws consent, does that make my earlier processing of their data illegal?",
+    "expected_sections": [26, 35],
+    "expected_answer": ""
+  },
+  {
+    "id": "A20",
+    "type": "answerable",
+    "question": "If another Nigerian law conflicts with the NDPA on data protection, which one wins?",
+    "expected_sections": [63],
+    "expected_answer": ""
+  },
+
+  {
+    "id": "U01",
+    "type": "unanswerable",
+    "subtype": "off_topic",
+    "question": "What is the capital of Ghana?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U02",
+    "type": "unanswerable",
+    "subtype": "off_topic",
+    "question": "How do I register a business name with the CAC?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U03",
+    "type": "unanswerable",
+    "subtype": "off_topic",
+    "question": "What is the current CBN monetary policy rate?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U04",
+    "type": "unanswerable",
+    "subtype": "plausible_not_in_act",
+    "question": "What is the maximum fine under the GDPR?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U05",
+    "type": "unanswerable",
+    "subtype": "plausible_not_in_act",
+    "question": "What KYC checks does the CBN require for digital loan apps?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U06",
+    "type": "unanswerable",
+    "subtype": "plausible_not_in_act",
+    "question": "Do I need a cookie consent banner on my website?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U07",
+    "type": "unanswerable",
+    "subtype": "near_miss",
+    "question": "Exactly how much is the registration fee for a data controller of major importance?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U08",
+    "type": "unanswerable",
+    "subtype": "near_miss",
+    "question": "How many days do I have to respond to a user's request to access their data?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U09",
+    "type": "unanswerable",
+    "subtype": "near_miss",
+    "question": "Who is the current National Commissioner of the NDPC?",
+    "expected_sections": [],
+    "expected_answer": ""
+  },
+  {
+    "id": "U10",
+    "type": "unanswerable",
+    "subtype": "near_miss",
+    "question": "What encryption standard does the NDPA require for stored passwords?",
+    "expected_sections": [],
+    "expected_answer": ""
+  }
+]
