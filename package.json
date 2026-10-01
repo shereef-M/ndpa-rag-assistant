@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/shereef-M/ndpa-rag-assistant/issues"
   },
-  "homepage": "https://github.com/shereef-M/ndpa-rag-assistant#readme"
+  "homepage": "https://github.com/shereef-M/ndpa-rag-assistant#readme",
+  "dependencies": {
+    "@google/genai": "^2.25.0",
+    "dotenv": "^18.0.5",
+    "mongodb": "^7.7.0"
+  }
 }
