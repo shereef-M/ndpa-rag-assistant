@@ -1,0 +1,723 @@
+{
+  "strategy": "section-v1",
+  "k": 5,
+  "timestamp": "2026-10-05T20:39:53.652Z",
+  "metrics": {
+    "hit@1": 1,
+    "fullRecall@1": 0.7,
+    "hit@3": 1,
+    "fullRecall@3": 0.8,
+    "hit@5": 1,
+    "fullRecall@5": 0.85,
+    "mrr": 1
+  },
+  "rows": [
+    {
+      "id": "A01",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        2
+      ],
+      "retrieved": [
+        2,
+        41,
+        43,
+        65,
+        5
+      ],
+      "scores": [
+        0.8876,
+        0.8713,
+        0.8712,
+        0.8609,
+        0.8567
+      ],
+      "topScore": 0.8876449465751648,
+      "firstRank": 1
+    },
+    {
+      "id": "A02",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        5
+      ],
+      "retrieved": [
+        5,
+        6,
+        12,
+        1,
+        4
+      ],
+      "scores": [
+        0.8884,
+        0.8805,
+        0.8702,
+        0.867,
+        0.8649
+      ],
+      "topScore": 0.8884386420249939,
+      "firstRank": 1
+    },
+    {
+      "id": "A03",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        14
+      ],
+      "retrieved": [
+        14,
+        15,
+        17,
+        18,
+        16
+      ],
+      "scores": [
+        0.856,
+        0.844,
+        0.8219,
+        0.8217,
+        0.8199
+      ],
+      "topScore": 0.8560135364532471,
+      "firstRank": 1
+    },
+    {
+      "id": "A04",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        24
+      ],
+      "retrieved": [
+        24,
+        25,
+        39,
+        26,
+        27
+      ],
+      "scores": [
+        0.867,
+        0.8393,
+        0.8389,
+        0.8363,
+        0.8349
+      ],
+      "topScore": 0.8670236468315125,
+      "firstRank": 1
+    },
+    {
+      "id": "A05",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        25
+      ],
+      "retrieved": [
+        25,
+        30,
+        36,
+        43,
+        24
+      ],
+      "scores": [
+        0.8707,
+        0.8493,
+        0.8392,
+        0.8378,
+        0.835
+      ],
+      "topScore": 0.8707300424575806,
+      "firstRank": 1
+    },
+    {
+      "id": "A06",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        26
+      ],
+      "retrieved": [
+        26,
+        35,
+        27,
+        25,
+        31
+      ],
+      "scores": [
+        0.8363,
+        0.819,
+        0.8091,
+        0.8086,
+        0.8047
+      ],
+      "topScore": 0.8363341093063354,
+      "firstRank": 1
+    },
+    {
+      "id": "A07",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        27
+      ],
+      "retrieved": [
+        27,
+        26,
+        24,
+        25,
+        35
+      ],
+      "scores": [
+        0.8595,
+        0.8367,
+        0.8366,
+        0.8355,
+        0.8309
+      ],
+      "topScore": 0.8594881296157837,
+      "firstRank": 1
+    },
+    {
+      "id": "A08",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        28
+      ],
+      "retrieved": [
+        28,
+        33,
+        44,
+        24,
+        39
+      ],
+      "scores": [
+        0.8799,
+        0.8328,
+        0.831,
+        0.8294,
+        0.8288
+      ],
+      "topScore": 0.8798770904541016,
+      "firstRank": 1
+    },
+    {
+      "id": "A09",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        30
+      ],
+      "retrieved": [
+        30,
+        25,
+        65,
+        39,
+        24
+      ],
+      "scores": [
+        0.88,
+        0.8328,
+        0.8299,
+        0.8287,
+        0.8287
+      ],
+      "topScore": 0.8800328969955444,
+      "firstRank": 1
+    },
+    {
+      "id": "A10",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        31,
+        65
+      ],
+      "retrieved": [
+        31,
+        25,
+        26,
+        35,
+        27
+      ],
+      "scores": [
+        0.865,
+        0.8325,
+        0.8315,
+        0.8246,
+        0.8245
+      ],
+      "topScore": 0.8650164604187012,
+      "firstRank": 1
+    },
+    {
+      "id": "A11",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        32,
+        65
+      ],
+      "retrieved": [
+        32,
+        14,
+        33,
+        9,
+        29
+      ],
+      "scores": [
+        0.857,
+        0.8243,
+        0.8239,
+        0.8188,
+        0.8143
+      ],
+      "topScore": 0.8569521307945251,
+      "firstRank": 1
+    },
+    {
+      "id": "A12",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        37
+      ],
+      "retrieved": [
+        37,
+        50,
+        46,
+        34,
+        36
+      ],
+      "scores": [
+        0.8461,
+        0.822,
+        0.8119,
+        0.8107,
+        0.8084
+      ],
+      "topScore": 0.846107542514801,
+      "firstRank": 1
+    },
+    {
+      "id": "A13",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        38
+      ],
+      "retrieved": [
+        38,
+        34,
+        35,
+        36,
+        43
+      ],
+      "scores": [
+        0.844,
+        0.8277,
+        0.8111,
+        0.8065,
+        0.8048
+      ],
+      "topScore": 0.8440315127372742,
+      "firstRank": 1
+    },
+    {
+      "id": "A14",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        40
+      ],
+      "retrieved": [
+        40,
+        39,
+        27,
+        34,
+        29
+      ],
+      "scores": [
+        0.8509,
+        0.8158,
+        0.8089,
+        0.8043,
+        0.8031
+      ],
+      "topScore": 0.8508812785148621,
+      "firstRank": 1
+    },
+    {
+      "id": "A15",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        41,
+        42,
+        43
+      ],
+      "retrieved": [
+        41,
+        43,
+        2,
+        42,
+        65
+      ],
+      "scores": [
+        0.865,
+        0.8627,
+        0.8587,
+        0.8448,
+        0.8362
+      ],
+      "topScore": 0.8649529218673706,
+      "firstRank": 1
+    },
+    {
+      "id": "A16",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        44,
+        65
+      ],
+      "retrieved": [
+        44,
+        45,
+        62,
+        33,
+        59
+      ],
+      "scores": [
+        0.8361,
+        0.8254,
+        0.8172,
+        0.8136,
+        0.8133
+      ],
+      "topScore": 0.8361269235610962,
+      "firstRank": 1
+    },
+    {
+      "id": "A17",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        46
+      ],
+      "retrieved": [
+        46,
+        47,
+        51,
+        34,
+        5
+      ],
+      "scores": [
+        0.8507,
+        0.8331,
+        0.8315,
+        0.8298,
+        0.8254
+      ],
+      "topScore": 0.8507280349731445,
+      "firstRank": 1
+    },
+    {
+      "id": "A18",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        48,
+        49
+      ],
+      "retrieved": [
+        48,
+        49,
+        53,
+        47,
+        51
+      ],
+      "scores": [
+        0.846,
+        0.8439,
+        0.8341,
+        0.8291,
+        0.8289
+      ],
+      "topScore": 0.8460023403167725,
+      "firstRank": 1
+    },
+    {
+      "id": "A19",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        26,
+        35
+      ],
+      "retrieved": [
+        35,
+        26,
+        25,
+        36,
+        24
+      ],
+      "scores": [
+        0.8515,
+        0.8338,
+        0.8232,
+        0.8157,
+        0.8123
+      ],
+      "topScore": 0.8514642119407654,
+      "firstRank": 1
+    },
+    {
+      "id": "A20",
+      "type": "answerable",
+      "subtype": null,
+      "expected": [
+        63
+      ],
+      "retrieved": [
+        63,
+        1,
+        64,
+        65,
+        3
+      ],
+      "scores": [
+        0.8771,
+        0.859,
+        0.8583,
+        0.8563,
+        0.8554
+      ],
+      "topScore": 0.8771153688430786,
+      "firstRank": 1
+    },
+    {
+      "id": "U01",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "expected": [],
+      "retrieved": [
+        20,
+        21,
+        62,
+        23,
+        14
+      ],
+      "scores": [
+        0.7812,
+        0.7777,
+        0.773,
+        0.7722,
+        0.7669
+      ],
+      "topScore": 0.7811743021011353,
+      "firstRank": 0
+    },
+    {
+      "id": "U02",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "expected": [],
+      "retrieved": [
+        22,
+        19,
+        23,
+        44,
+        62
+      ],
+      "scores": [
+        0.7905,
+        0.7831,
+        0.7827,
+        0.781,
+        0.7774
+      ],
+      "topScore": 0.7905162572860718,
+      "firstRank": 0
+    },
+    {
+      "id": "U03",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "expected": [],
+      "retrieved": [
+        22,
+        62,
+        43,
+        21,
+        65
+      ],
+      "scores": [
+        0.7733,
+        0.7721,
+        0.7715,
+        0.7709,
+        0.7705
+      ],
+      "topScore": 0.7733147144317627,
+      "firstRank": 0
+    },
+    {
+      "id": "U04",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "expected": [],
+      "retrieved": [
+        49,
+        48,
+        45,
+        51,
+        52
+      ],
+      "scores": [
+        0.8426,
+        0.8321,
+        0.823,
+        0.8159,
+        0.8118
+      ],
+      "topScore": 0.8426377177238464,
+      "firstRank": 0
+    },
+    {
+      "id": "U05",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "expected": [],
+      "retrieved": [
+        27,
+        28,
+        65,
+        26,
+        58
+      ],
+      "scores": [
+        0.8011,
+        0.7932,
+        0.7924,
+        0.7918,
+        0.7913
+      ],
+      "topScore": 0.8010824918746948,
+      "firstRank": 0
+    },
+    {
+      "id": "U06",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "expected": [],
+      "retrieved": [
+        26,
+        27,
+        25,
+        35,
+        33
+      ],
+      "scores": [
+        0.8047,
+        0.8024,
+        0.8024,
+        0.7961,
+        0.7875
+      ],
+      "topScore": 0.8047356605529785,
+      "firstRank": 0
+    },
+    {
+      "id": "U07",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "expected": [],
+      "retrieved": [
+        45,
+        44,
+        49,
+        48,
+        61
+      ],
+      "scores": [
+        0.8679,
+        0.8665,
+        0.8272,
+        0.8239,
+        0.8153
+      ],
+      "topScore": 0.8679168224334717,
+      "firstRank": 0
+    },
+    {
+      "id": "U08",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "expected": [],
+      "retrieved": [
+        34,
+        38,
+        27,
+        40,
+        35
+      ],
+      "scores": [
+        0.8423,
+        0.8224,
+        0.8175,
+        0.8173,
+        0.8155
+      ],
+      "topScore": 0.8422635793685913,
+      "firstRank": 0
+    },
+    {
+      "id": "U09",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "expected": [],
+      "retrieved": [
+        44,
+        49,
+        32,
+        45,
+        33
+      ],
+      "scores": [
+        0.8582,
+        0.8417,
+        0.8411,
+        0.8377,
+        0.8272
+      ],
+      "topScore": 0.8581663966178894,
+      "firstRank": 0
+    },
+    {
+      "id": "U10",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "expected": [],
+      "retrieved": [
+        39,
+        40,
+        33,
+        24,
+        29
+      ],
+      "scores": [
+        0.8246,
+        0.8017,
+        0.7993,
+        0.798,
+        0.797
+      ],
+      "topScore": 0.8245595097541809,
+      "firstRank": 0
+    }
+  ]
+}
