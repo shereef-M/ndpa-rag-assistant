@@ -26,18 +26,42 @@ async function closeConnection() {
   }
 }
 
-async function embedQuery(question) {
-  const res = await ai.models.embedContent({
-    model: MODEL,
-    contents: question,
-    config: { taskType: "RETRIEVAL_QUERY", outputDimensionality: DIM },
-  });
-  return res.embeddings[0].values;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function embedQuery(question, attempt = 1) {
+  try {
+    const res = await ai.models.embedContent({
+      model: MODEL,
+      contents: question,
+      config: { taskType: "RETRIEVAL_QUERY", outputDimensionality: DIM },
+    });
+    return res.embeddings[0].values;
+  } catch (err) {
+    // Retry on rate limits, temporary server errors, and transient network failures
+    const retryable =
+      err.status === 429 ||
+      err.status === 503 ||
+      /429|RESOURCE_EXHAUSTED|UNAVAILABLE|fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND/.test(
+        err.message,
+      );
+    if (retryable && attempt < 5) {
+      const wait = 2 ** attempt * 1000; // 2s, 4s, 8s, 16s
+      console.warn(
+        `\n  rate limited, retrying in ${wait / 1000}s (attempt ${attempt})`,
+      );
+      await sleep(wait);
+      return embedQuery(question, attempt + 1);
+    }
+    throw err;
+  }
 }
 
 // Atlas cosine score is rescaled: score = (1 + cosine) / 2, range 0-1
-async function retrieve(question, { k = 5, strategy = "section-v1" } = {}) {
-  const queryVector = await embedQuery(question);
+async function retrieve(
+  question,
+  { k = 5, strategy = "section-v1", queryVector = null } = {},
+) {
+  queryVector = queryVector || (await embedQuery(question));
   const col = await getCollection();
   return col
     .aggregate([
