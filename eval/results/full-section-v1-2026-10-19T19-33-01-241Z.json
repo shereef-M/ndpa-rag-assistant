@@ -1,0 +1,584 @@
+{
+  "strategy": "section-v1",
+  "generator": "openai/gpt-oss-120b",
+  "judge": "openai/gpt-oss-20b",
+  "threshold": 0.825,
+  "timestamp": "2026-10-19T19:33:01.242Z",
+  "rows": [
+    {
+      "id": "A01",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Yes. Section 2(1) states the Act applies to all processing of personal data, and Section 2(2)(c) expressly includes a data controller or processor that is not domiciled, resident or operating in Nigeria but processes personal data of a data subject in Nigeria.",
+      "cited": [
+        2
+      ],
+      "topScore": 0.8876,
+      "inlineCitation": false,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately cites the relevant sections and correctly states that the NDPA applies to foreign companies processing data of Nigerian data subjects."
+      }
+    },
+    {
+      "id": "A02",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "The Nigeria Data Protection Commission is the statutory body tasked with a wide range of duties, including regulating technological and organisational measures for data protection, fostering related technologies, accrediting compliance service providers, registering major data controllers and processors, promoting public awareness, receiving complaints, collaborating with other entities, ensuring compliance with national and international obligations, participating in international fora, assessing adequacy of cross‑border transfer mechanisms, publishing data‑protection information and advising government, as well as submitting legislative proposals and undertaking other necessary legal actions (s.5). It also has powers to oversee implementation of the Act, prescribe fees, issue regulations and guidance, set filing requirements, request information, conduct investigations, impose penalties, acquire and dispose of assets, and perform other acts needed to give effect to its functions (s.6).",
+      "cited": [
+        5,
+        6
+      ],
+      "topScore": 0.8884,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately reflects all functions and powers listed in Sections 5 and 6 and fully covers the key points highlighted in the reference answer."
+      }
+    },
+    {
+      "id": "A03",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "The National Commissioner is appointed by the President on the recommendation of the Minister (s.14(1)(a)). The Commissioner serves a term of five years and may be re‑appointed for one further five‑year term, and no more (s.14(4)(a)).",
+      "cited": [
+        14
+      ],
+      "topScore": 0.856,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately cites the relevant sections and fully matches the key points of the reference answer."
+      }
+    },
+    {
+      "id": "A04",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "You must process personal data fairly, lawfully and transparently; collect it only for specified, explicit and legitimate purposes and avoid incompatible further use; ensure it is adequate, relevant and limited to what is necessary; retain it only as long as needed; keep it accurate and up‑to‑date; and protect it with appropriate security against unauthorised or unlawful processing, loss or breach. You also owe a duty of care and must demonstrate accountability for these principles (s.24).",
+      "cited": [
+        24
+      ],
+      "topScore": 0.867,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "A05",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Beyond consent, the Act permits processing when it is necessary for (i) performing a contract or steps before a contract, (ii) complying with a legal obligation, (iii) protecting vital interests of the data subject or another person, (iv) carrying out a task in the public interest or exercising official authority, or (v) pursuing legitimate interests of the controller or a third party, subject to the limitations in s.25(2).",
+      "cited": [
+        25
+      ],
+      "topScore": 0.8707,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately reflects the provisions of s.25(1)(b) and acknowledges the limitations in s.25(2) without adding unsupported claims."
+      }
+    },
+    {
+      "id": "A06",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "No. Under the Act, silence or inactivity does not count as consent, and consent must be given affirmatively, not by default (s.26(3); s.26(7)(a)). Therefore a non‑response cannot be treated as a yes.",
+      "cited": [
+        26
+      ],
+      "topScore": 0.8363,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately cites the relevant sections and matches the reference answer's key points."
+      }
+    },
+    {
+      "id": "A07",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Before you collect personal data, you must inform the data subject of the controller’s identity and contact details, the specific lawful basis and purposes of processing, any recipients or categories of recipients, the data subject’s rights under Part VI, the retention period, how to lodge a complaint with the Commission, and any automated decision‑making (including profiling) and its consequences, as required by s.27(1). This information must be presented in a clear, concise, transparent and easily accessible privacy policy (s.27(3)).",
+      "cited": [
+        27
+      ],
+      "topScore": 0.8595,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately reflects all elements required by s.27(1) and the formatting requirement of s.27(3), matching the reference answer exactly."
+      }
+    },
+    {
+      "id": "A08",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "You must conduct a data privacy impact assessment before you start processing whenever that processing is likely to pose a high risk to the rights and freedoms of data subjects, based on its nature, scope, context and purposes (s.28(1)). If the assessment still shows a high risk, you must also consult the Commission before proceeding (s.28(2)).",
+      "cited": [
+        28
+      ],
+      "topScore": 0.8799,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "A09",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Sensitive personal data includes genetic and biometric data, race or ethnic origin, religious or similar beliefs, health status, sex life, political opinions or affiliations, trade union memberships, and any other information the Commission may prescribe (s.65). You may process such data only if one of the specific grounds in s.30(1) applies – for example, the data subject has given explicit consent, the processing is necessary for employment or social security laws, vital interests, legitimate activities of a non‑profit with safeguards, legal claims, substantial public interest, medical care, public health, or archiving/research purposes, each with appropriate safeguards. The Commission may also add categories or grounds via regulations (s.30(2)).",
+      "cited": [
+        30,
+        65
+      ],
+      "topScore": 0.88,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "A10",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Under the NDPA a child – including a 15‑year‑old – cannot give valid consent on their own; the data controller must obtain consent from the parent or legal guardian (s.31(1)). Only if the Commission issues regulations for children 13 years and older using electronic services (s.31(5)) or an exception in s.31(4) applies could consent be given without a guardian. As provided, the Act does not allow a 15‑year‑old to consent independently.",
+      "cited": [
+        31
+      ],
+      "topScore": 0.865,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "s.31(2) verification of age and consent",
+          "s.65 child definition from Child's Right Act 2003"
+        ],
+        "notes": "The answer correctly cites s.31(1) and s.31(5) and notes the exception in s.31(4), but omits the requirement in s.31(2) to verify age and consent and the child definition in s.65, which are part of the reference answer's key points."
+      }
+    },
+    {
+      "id": "A11",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "The Act requires a Data Protection Officer only for a data controller of major importance (s.32(1)). If your company is such a controller, it must appoint a DPO; otherwise the Act does not impose that duty.",
+      "cited": [
+        32
+      ],
+      "topScore": 0.857,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The DPO may be an employee or engaged by a service contract (s.32(2))."
+        ],
+        "notes": "The answer correctly states the major importance requirement but omits the detail that the DPO may be an employee or engaged by a service contract."
+      }
+    },
+    {
+      "id": "A12",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Yes. Section 37(3) requires the data controller to provide safeguards that include the data subject’s right to contest an automated decision, and also to obtain human intervention and express their point of view. Section 34(1)(a)(viii) further obliges the controller to disclose the existence of automated decision‑making, supporting the subject’s ability to challenge it.",
+      "cited": [
+        34,
+        37
+      ],
+      "topScore": 0.8461,
+      "inlineCitation": false,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The answer does not mention the right under s.37(1) that a data subject has to not be subject to decisions based solely on automated processing, nor does it mention the exceptions under s.37(2) (contract necessity, written law, consent)."
+        ],
+        "notes": "The answer correctly cites the safeguards in s.37(3) and the disclosure requirement in s.34(1)(a)(viii), but omits the core right in s.37(1) and the exception list in s.37(2)."
+      }
+    },
+    {
+      "id": "A13",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Yes. Under the Act a data subject has the right to receive their personal data in a structured, commonly used, machine‑readable format and to transmit it to another controller, enabling them to move the data to another service (s.38(2)(a)‑(c)).",
+      "cited": [
+        38
+      ],
+      "topScore": 0.844,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "Mention that the Commission may make regulations setting the conditions for exercising the right under s.38(1) and (3)."
+        ],
+        "notes": "The answer correctly cites s.38(2)(a)-(c) but omits the reference to s.38(1) and (3) which are part of the key points in the reference answer."
+      }
+    },
+    {
+      "id": "A14",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "The Act requires a data controller to notify the Commission within 72 hours of becoming aware of a breach that is likely to risk individuals' rights and freedoms (s.40(2)). If the breach is likely to cause a high risk to those rights, the controller must immediately inform the affected data subjects in clear language, or, if that is disproportionate, make a public communication (s.40(3)).",
+      "cited": [
+        40
+      ],
+      "topScore": 0.8509,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The requirement to provide advice to data subjects on mitigating the effects of the breach (s.40(3)(b))."
+        ],
+        "notes": "The answer correctly cites the 72‑hour regulator notification and the immediate or public communication to affected users, but it omits the detail that the data controller must also give advice on how data subjects can mitigate the adverse effects of the breach."
+      }
+    },
+    {
+      "id": "A15",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Storing Nigerian customers' data in the United States is a cross‑border transfer and is only allowed if the U.S. provides an adequate level of protection under s.42 or one of the bases in s.43 (e.g., consent, contract necessity, public interest, etc.) applies; otherwise the transfer is prohibited by s.41(1).",
+      "cited": [
+        41,
+        42,
+        43
+      ],
+      "topScore": 0.865,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The answer does not mention the requirement in s.41(2) to record the basis for transfer and the adequacy assessment."
+        ]
+      }
+    },
+    {
+      "id": "A16",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "Companies that act as data controllers or data processors of major importance must register with the Commission within six months of the Act’s commencement or when they become such controllers or processors (s.44(1)). The registration requirement can be waived only if the Commission exempts a class of them (s.44(6)).",
+      "cited": [
+        44
+      ],
+      "topScore": 0.8361,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The answer does not mention the definition of ‘major importance’ as set out in s.65, which specifies the criteria (e.g., number of data subjects or significance to Nigeria’s economy, society or security)."
+        ],
+        "notes": "The answer accurately cites the registration requirement and exemption clause, but omits the key definition of which companies are considered of major importance, as required by the reference answer."
+      }
+    },
+    {
+      "id": "A17",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "A data subject who is aggrieved can lodge a complaint with the Data Protection Commission, as provided in s.46(1). The Commission will then consider the complaint and may investigate it if it is not frivolous or vexatious (s.46(2)), or may initiate its own investigation (s.46(3)). The Commission’s functions include receiving such complaints (s.5(g)).",
+      "cited": [
+        5,
+        46
+      ],
+      "topScore": 0.8507,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately cites the relevant provisions and fully covers the key points outlined in the reference answer. No unsupported claims or omissions are present."
+      }
+    },
+    {
+      "id": "A18",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "The Act allows a penalty or remedial fee of up to the “higher maximum amount”, which is the greater of N10,000,000 or 2 % of the company’s annual gross revenue in the preceding financial year (s.48(3)(d) & s.48(4)). Offences may also attract a fine up to that same higher maximum amount (s.49(1)(a)(i)).",
+      "cited": [
+        48,
+        49
+      ],
+      "topScore": 0.846,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "partial",
+        "missing_points": [
+          "The answer omits that a conviction can also carry imprisonment of up to one year, or both a fine and imprisonment, as stated in s.49(1)(b).",
+          "It does not mention that for non‑major importance entities the standard maximum amount (greater of N2,000,000 or 2% of revenue) applies, which is part of the overall penalty regime."
+        ]
+      }
+    },
+    {
+      "id": "A19",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "No. The Act states that withdrawing consent does not affect the lawfulness of any processing that took place before the withdrawal, so earlier processing remains lawful.",
+      "cited": [
+        26
+      ],
+      "topScore": 0.8515,
+      "inlineCitation": false,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer accurately reflects s.26(5) and correctly states that earlier processing remains lawful. It omits mention of s.35, but that is not essential to answering the specific question about earlier processing."
+      }
+    },
+    {
+      "id": "A20",
+      "type": "answerable",
+      "subtype": null,
+      "status": "answered",
+      "reason": null,
+      "answer": "When another Nigerian law conflicts with the NDPA on data protection, the NDPA prevails over the inconsistent provisions of that law.",
+      "cited": [
+        63
+      ],
+      "topScore": 0.8771,
+      "inlineCitation": false,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "U01",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.7812,
+      "inlineCitation": null,
+      "judgement": null
+    },
+    {
+      "id": "U02",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.7905,
+      "inlineCitation": null,
+      "judgement": null
+    },
+    {
+      "id": "U03",
+      "type": "unanswerable",
+      "subtype": "off_topic",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.7733,
+      "inlineCitation": null,
+      "judgement": null
+    },
+    {
+      "id": "U04",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "status": "not_specified",
+      "reason": "model_unsupported",
+      "answer": "The Act does not specify any GDPR fine. It only sets fines for NDPA violations: a data controller or processor may be fined up to the “higher maximum amount” (the greater of N10,000,000 or 2% of its annual gross revenue) or the “standard maximum amount” (the greater of N2,000,000 or 2% of its annual gross revenue) (s.48(4‑5); s.49(1)(a)).",
+      "cited": [
+        48,
+        49
+      ],
+      "topScore": 0.8426,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "n/a",
+        "missing_points": [],
+        "notes": "All claims in the answer are supported by the cited sections. The answer correctly states that the Act does not specify a GDPR fine and accurately describes the maximum fines under the NDPA as defined in sections 48(4‑5) and 49(1)(a)."
+      }
+    },
+    {
+      "id": "U05",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.8011,
+      "inlineCitation": null,
+      "judgement": null
+    },
+    {
+      "id": "U06",
+      "type": "unanswerable",
+      "subtype": "plausible_not_in_act",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.8047,
+      "inlineCitation": null,
+      "judgement": null
+    },
+    {
+      "id": "U07",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "status": "not_specified",
+      "reason": "model_unsupported",
+      "answer": "The Act does not state a specific amount for the registration fee; it only allows the Commission to prescribe fees or levies for data controllers and processors of major importance (s.45).",
+      "cited": [
+        45
+      ],
+      "topScore": 0.8679,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "U08",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "status": "not_specified",
+      "reason": "model_unsupported",
+      "answer": "The Act does not set a specific number of days for responding to a data‑subject access request; it requires the controller to provide the information \"without constraint or unreasonable delay\" (s.34(1)(a)) and, for data portability, \"without undue delay\" (s.38(2)(a)).",
+      "cited": [
+        34,
+        38
+      ],
+      "topScore": 0.8423,
+      "inlineCitation": true,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": ""
+      }
+    },
+    {
+      "id": "U09",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "status": "not_specified",
+      "reason": "model_unsupported",
+      "answer": "The Act does not specify a numeric user threshold for a company to be considered a data controller of major importance; the provided sections do not define the qualification in terms of number of users.",
+      "cited": [],
+      "topScore": 0.8582,
+      "inlineCitation": false,
+      "judgement": {
+        "faithfulness": "faithful",
+        "unsupported_claims": [],
+        "correctness": "correct",
+        "missing_points": [],
+        "notes": "The answer correctly states that the Act does not provide a numeric user threshold; it aligns with the reference that the threshold is set by the Commission and no figure is specified."
+      }
+    },
+    {
+      "id": "U10",
+      "type": "unanswerable",
+      "subtype": "near_miss",
+      "status": "refused",
+      "reason": "low_retrieval_score",
+      "answer": "I can only answer questions about the Nigeria Data Protection Act 2023, and I couldn't find any sections of the Act relevant to this question.",
+      "cited": [],
+      "topScore": 0.8246,
+      "inlineCitation": null,
+      "judgement": null
+    }
+  ]
+}

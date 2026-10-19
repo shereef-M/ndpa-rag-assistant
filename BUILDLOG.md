@@ -51,3 +51,8 @@
 - Hand tests: Ghana refused at the gate (0.7812); access-deadline near-miss returned not_specified with verified s.34/s.38 citations; consent and penalty both answered.
 - Limits found: (1) consent answer had no inline citations this run, though cited_sections was populated, so prompt compliance isn't consistent; (2) penalty answer cited non-existent "s.48(3)(d)" and omitted the N2m standard maximum. Guardrail 2 checks section numbers only, so subsection errors and omissions pass. These are for the faithfulness judge to measure; (3) wording differs between runs despite temperature 0 (reasoning model), so eval results need a variance caveat.
 - The feared s.47 cross-reference false refusal didn't occur here (s.47 was retrieved at rank 4 anyway); still to be measured in the full eval.
+
+## 9. Full eval harness
+- Resumable full eval: all 30 questions through ask(), judged by gpt-oss-20b for faithfulness (vs cited sections) and correctness (vs verified reference answers). Several Groq 429s were absorbed by backoff.
+- Result looked too clean (100% faithful), so I spot-checked by hand: the judge missed A18's non-existent "s.48(3)(d)" and itself cited a non-existent "s.40(3)(b)". Faithfulness is recorded as an upper bound.
+- My inline-citation regex missed the "Section 37(3)" form, which understated the rate (79.2% vs the true 87.5%). Fixed in full-eval.js.
