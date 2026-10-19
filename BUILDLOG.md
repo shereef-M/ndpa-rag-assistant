@@ -44,3 +44,10 @@
 - Prompt contract: answer only from provided sections, cite inline (s.26(3)), JSON output {answer, cited_sections, supported}, temperature 0.
 - Resolved the parked near-miss design: when unsupported, the model says the Act doesn't specify it and states only what the sections do say, with citations. This matches the test set's reference answers.
 - Hand tests: consent question was supported and cited correctly, though the final sentence added an uncited "before processing" (a subtle addition the faithfulness judge must catch). The access-deadline near-miss scored 0.8423 (above the 0.825 gate) but the model flagged it unsupported and gave the s.34(1) partial answer. Capital of Ghana: refused without using outside knowledge, but listed irrelevant sections, so the retrieval gate should pre-empt off-topic questions with a clean refusal.
+
+## 8. Guardrails
+- `ask()` pipeline with three outcomes: answered / not_specified / refused. Guardrail 1: top score < 0.825 refuses without an LLM call. Guardrail 2: every cited section (from cited_sections and scanned from answer text) must have been retrieved, and a "supported" answer must cite something.
+- Edit to generation.js wasn't applied the first time ("generateFromHits is not a function"); diagnosed with grep on the actual file.
+- Hand tests: Ghana refused at the gate (0.7812); access-deadline near-miss returned not_specified with verified s.34/s.38 citations; consent and penalty both answered.
+- Limits found: (1) consent answer had no inline citations this run, though cited_sections was populated, so prompt compliance isn't consistent; (2) penalty answer cited non-existent "s.48(3)(d)" and omitted the N2m standard maximum. Guardrail 2 checks section numbers only, so subsection errors and omissions pass. These are for the faithfulness judge to measure; (3) wording differs between runs despite temperature 0 (reasoning model), so eval results need a variance caveat.
+- The feared s.47 cross-reference false refusal didn't occur here (s.47 was retrieved at rank 4 anyway); still to be measured in the full eval.

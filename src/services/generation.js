@@ -85,21 +85,25 @@ function parseOutput(raw) {
   return out;
 }
 
+// Generates from hits already retrieved (used by the ask pipeline)
+async function generateFromHits(question, hits) {
+  const raw = await callGroq([
+    { role: "system", content: SYSTEM_PROMPT },
+    { role: "user", content: buildUserMessage(question, hits) },
+  ]);
+  return parseOutput(raw);
+}
+
+// Standalone: retrieve then generate (used by the CLI)
 async function generateAnswer(
   question,
   { k = 5, strategy = "section-v1", queryVector = null } = {},
 ) {
   const hits = await retrieve(question, { k, strategy, queryVector });
-  const raw = await callGroq([
-    { role: "system", content: SYSTEM_PROMPT },
-    { role: "user", content: buildUserMessage(question, hits) },
-  ]);
-  const out = parseOutput(raw);
+  const out = await generateFromHits(question, hits);
   return {
     question,
-    answer: out.answer,
-    cited_sections: out.cited_sections,
-    supported: out.supported,
+    ...out,
     retrieved: hits.map((h) => ({
       section: h.section,
       title: h.title,
@@ -109,7 +113,7 @@ async function generateAnswer(
   };
 }
 
-module.exports = { generateAnswer, closeConnection };
+module.exports = { generateAnswer, generateFromHits, closeConnection };
 
 // CLI: node src/services/generation.js "your question"
 if (require.main === module) {
