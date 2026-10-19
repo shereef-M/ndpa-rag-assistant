@@ -38,3 +38,9 @@
 - Repeated "fetch failed" from an unstable connection. Extended retry to transient network errors, and added a disk cache for test-question embeddings (eval only) so runs resume where they failed and reruns cost no quota. Live API still embeds every query fresh.
 - An eval edit overwrote the retrieval import line, causing "closeConnection is not defined". Restored.
 - Eval blocked by network: both Gemini and Atlas unreachable at the same time (16/30 query embeddings cached so far).
+
+## 7. Generation
+- Queried Groq's model list with our key rather than trusting secondhand lists: no Llama models remain available; chose `openai/gpt-oss-120b` (strongest production option). `openai/gpt-oss-20b` reserved as the faithfulness judge, so the judge is a different model from the generator.
+- Prompt contract: answer only from provided sections, cite inline (s.26(3)), JSON output {answer, cited_sections, supported}, temperature 0.
+- Resolved the parked near-miss design: when unsupported, the model says the Act doesn't specify it and states only what the sections do say, with citations. This matches the test set's reference answers.
+- Hand tests: consent question was supported and cited correctly, though the final sentence added an uncited "before processing" (a subtle addition the faithfulness judge must catch). The access-deadline near-miss scored 0.8423 (above the 0.825 gate) but the model flagged it unsupported and gave the s.34(1) partial answer. Capital of Ghana: refused without using outside knowledge, but listed irrelevant sections, so the retrieval gate should pre-empt off-topic questions with a clean refusal.
