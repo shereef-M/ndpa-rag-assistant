@@ -102,7 +102,7 @@ async function retrieve(
   return [...bySection.values()];
 }
 
-module.exports = { retrieve, embedQuery, closeConnection };
+module.exports = { retrieve, embedQuery, getCollection, closeConnection };
 
 // CLI: node src/services/retrieval.js "your question"
 if (require.main === module) {

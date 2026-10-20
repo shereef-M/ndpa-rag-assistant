@@ -56,3 +56,8 @@
 - Resumable full eval: all 30 questions through ask(), judged by gpt-oss-20b for faithfulness (vs cited sections) and correctness (vs verified reference answers). Several Groq 429s were absorbed by backoff.
 - Result looked too clean (100% faithful), so I spot-checked by hand: the judge missed A18's non-existent "s.48(3)(d)" and itself cited a non-existent "s.40(3)(b)". Faithfulness is recorded as an upper bound.
 - My inline-citation regex missed the "Section 37(3)" form, which understated the rate (79.2% vs the true 87.5%). Fixed in full-eval.js.
+
+## 10. HTTP API
+- Express API: POST /ask (validated, max 500 chars), GET /sections/:id (full text from section-v1 so s.65 returns whole), GET /health (pings DB). Upstream failures return a clean 502; real errors stay in server logs.
+- Added a 10 req/min/IP limit on /ask only, as a deliberate small exception to "rate limiting out of scope": a public endpoint on free-tier Gemini/Groq quotas could be drained by one script.
+- Local tests passed. The 15-year-old question again produced "a child, including a 15-year-old". The Act never states the age (only references the Child's Right Act), so this outside-knowledge leak is consistent, not variance: a v2 prompt fix.
