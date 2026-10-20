@@ -47,7 +47,7 @@ async function embedQuery(question, attempt = 1) {
     if (retryable && attempt < 5) {
       const wait = 2 ** attempt * 1000; // 2s, 4s, 8s, 16s
       console.warn(
-        `\n  rate limited, retrying in ${wait / 1000}s (attempt ${attempt})`,
+        `\n  embedding retryable error (${err.message.slice(0, 40)}), retrying in ${wait / 1000}s`,
       );
       await sleep(wait);
       return embedQuery(question, attempt + 1);
@@ -63,15 +63,15 @@ async function retrieve(
 ) {
   queryVector = queryVector || (await embedQuery(question));
   const col = await getCollection();
-  return col
+  const raw = await col
     .aggregate([
       {
         $vectorSearch: {
           index: INDEX_NAME,
           path: "embedding",
           queryVector,
-          exact: true, // 66 chunks: exact search is cheap and removes ANN noise from eval
-          limit: k,
+          exact: true, // small corpus: exact search is cheap and removes ANN noise from eval
+          limit: k * 3, // extra candidates so split sections can be grouped below
           filter: { chunkStrategy: strategy },
         },
       },
@@ -88,6 +88,18 @@ async function retrieve(
       },
     ])
     .toArray();
+
+  // Group by section: a section split into several chunks (e.g. s.65 definitions) takes one top-k slot,
+  // scored by its best chunk, with matching chunks' text merged in rank order.
+  const bySection = new Map();
+  for (const h of raw) {
+    if (bySection.has(h.section)) {
+      bySection.get(h.section).text += "\n\n" + h.text;
+    } else if (bySection.size < k) {
+      bySection.set(h.section, { ...h });
+    }
+  }
+  return [...bySection.values()];
 }
 
 module.exports = { retrieve, embedQuery, closeConnection };
