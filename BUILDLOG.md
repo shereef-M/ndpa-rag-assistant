@@ -61,3 +61,10 @@
 - Express API: POST /ask (validated, max 500 chars), GET /sections/:id (full text from section-v1 so s.65 returns whole), GET /health (pings DB). Upstream failures return a clean 502; real errors stay in server logs.
 - Added a 10 req/min/IP limit on /ask only, as a deliberate small exception to "rate limiting out of scope": a public endpoint on free-tier Gemini/Groq quotas could be drained by one script.
 - Local tests passed. The 15-year-old question again produced "a child, including a 15-year-old". The Act never states the age (only references the Child's Right Act), so this outside-knowledge leak is consistent, not variance: a v2 prompt fix.
+
+## 11. Deployment (Render free tier)
+- Live at https://ndpa-rag-assistant.onrender.com. Node pinned >=20 (built-in fetch); build `npm ci`, start `npm start`, health check `/health`.
+- Atlas: the cluster's IP list already contained 0.0.0.0/0 (from an earlier project), so it was reachable from anywhere all along; Render's free tier has no static IP anyway. Since credentials are the only protection, production uses a dedicated read-only user (`read` on `ndpa_rag` only). Verified locally: 155 docs readable, inserts blocked.
+- Mistake: a test command took the reader password inline and it got pasted into a chat. Rotated it before giving it to Render, and cleared shell history. Secrets now go through env vars only.
+- Region: Oregon (Frankfurt is closer to the Cape Town cluster, but the added ~0.3s DB latency is small next to LLM time).
+- Production smoke test: health ok, /sections/40 ok, breach question answered citing s.40(2) "72 hours", off-topic refused at gate (0.7812).
