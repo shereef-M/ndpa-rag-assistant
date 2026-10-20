@@ -60,3 +60,20 @@ A deterministic subsection validator (parse cited subsections, verify they exist
 
 ### Caveats
 Single run; the generator is a reasoning model and wording varies between runs despite temperature 0. n=30.
+
+## Tuning experiment 1: split s.65 into one chunk per definition (`s65split-v1`)
+Hypothesis: s.65 (5,716 chars, 24 definitions) is one blurry vector, so definition-dependent questions miss it. Change: s.65 split into 24 definition chunks; the other 65 sections reuse their vectors; retrieval groups chunks by section so a split section takes one top-k slot.
+
+| | section-v1 | s65split-v1 |
+|---|---|---|
+| fullRecall@5 | 85.0% | 90.0% |
+| hit@1 / MRR | 100% / 1.000 | 100% / 1.000 |
+| Correct / partial (judge) | 12 / 8 | 11 / 9 |
+| Faithful (judge) | 24/24 | 23/24 |
+| Refusals | 10/10, 0 false | 10/10, 0 false |
+
+**Retrieval gain, no measurable answer gain.** A10 now retrieves the "child" definition (rank 4), but the generator didn't use it. A11 and A16 still miss s.65: their questions never mention "major importance"; the dependency exists only because s.32/s.44 use the defined term, which chunking cannot fix (candidate fix: definition expansion).
+Changes in answer quality are within run-to-run variance: A17's retrieved sections were identical in both runs, yet it moved from correct to partial. With n=20 and a non-deterministic generator, single runs cannot resolve one-question effects.
+U04's "unfaithful" is a judge error: it flagged the correct statement "the NDPA does not specify any maximum fine under the GDPR" as an unsupported claim. The judge mis-scores statements of absence.
+Judge also missed A10's "even if the child is 15", which implies an age threshold the Act does not state.
+**Decision:** adopt `s65split-v1` as default (retrieval gain, no harm detected).

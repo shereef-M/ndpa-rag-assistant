@@ -146,6 +146,7 @@ async function main() {
         result.status !== "refused"
           ? /\bs\.\s?\d+|\bsections?\s+\d+/i.test(result.answer)
           : null,
+      judgement,
     };
     fs.writeFileSync(PROGRESS_FILE, JSON.stringify(progress, null, 2)); // save immediately
     console.log(

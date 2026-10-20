@@ -22,7 +22,7 @@ function extractTextCitations(answer) {
 
 async function ask(
   question,
-  { k = 5, strategy = "section-v1", queryVector = null } = {},
+  { k = 5, strategy = "s65split-v1", queryVector = null } = {},
 ) {
   const hits = await retrieve(question, { k, strategy, queryVector });
   const topScore = hits.length ? hits[0].score : 0;

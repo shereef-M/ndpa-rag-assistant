@@ -59,7 +59,7 @@ async function embedQuery(question, attempt = 1) {
 // Atlas cosine score is rescaled: score = (1 + cosine) / 2, range 0-1
 async function retrieve(
   question,
-  { k = 5, strategy = "section-v1", queryVector = null } = {},
+  { k = 5, strategy = "s65split-v1", queryVector = null } = {},
 ) {
   queryVector = queryVector || (await embedQuery(question));
   const col = await getCollection();

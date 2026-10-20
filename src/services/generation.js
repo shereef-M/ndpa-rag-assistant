@@ -97,7 +97,7 @@ async function generateFromHits(question, hits) {
 // Standalone: retrieve then generate (used by the CLI)
 async function generateAnswer(
   question,
-  { k = 5, strategy = "section-v1", queryVector = null } = {},
+  { k = 5, strategy = "s65split-v1", queryVector = null } = {},
 ) {
   const hits = await retrieve(question, { k, strategy, queryVector });
   const out = await generateFromHits(question, hits);
